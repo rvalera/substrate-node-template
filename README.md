@@ -1,21 +1,16 @@
-# Substrate Node Template
+# DOCFabric - Substrate Node Template
 
-[![Try on playground](https://img.shields.io/badge/Playground-Node_Template-brightgreen?logo=Parity%20Substrate)](https://docs.substrate.io/playground/) [![Matrix](https://img.shields.io/matrix/substrate-technical:matrix.org)](https://matrix.to/#/#substrate-technical:matrix.org)
+Este es un node basado en el Framework FRAME de [Substrate](https://www.substrate.io/) que incorporar un conjunto de funcionalidades para Almacenar distinto tipo de contenido en una Blockchain, en este sentido contiene una Pallet especializada que permite construir distintos tipos de estructura:
 
-A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
+- Tipos de Contenido: Define la Metadata de los documentos que se almacenan en el repositorio.
+- Sitios: Entidad que contiene un conjunto de documentos.
+- Content: Representa el contenido (Metadata + Contenido del Archivo)
 
 ## Getting Started
 
 Follow the steps below to get started with the Node Template, or get it up and running right from
 your browser in just a few clicks using
 the [Substrate Playground](https://docs.substrate.io/playground/) :hammer_and_wrench:
-
-### Using Nix
-
-Install [nix](https://nixos.org/) and optionally [direnv](https://github.com/direnv/direnv) and
-[lorri](https://github.com/nix-community/lorri) for a fully plug and play experience for setting up
-the development environment. To get all the correct dependencies activate direnv `direnv allow` and
-lorri `lorri shell`.
 
 ### Rust Setup
 
@@ -36,15 +31,6 @@ without launching it:
 
 ```sh
 cargo build --release
-```
-
-### Embedded Docs
-
-Once the project has been built, the following command can be used to explore all parameters and
-subcommands:
-
-```sh
-./target/release/node-template -h
 ```
 
 ## Run
@@ -102,7 +88,6 @@ dev
 $ ls ./my-chain-state/chains/dev
 db keystore network
 ```
-
 
 ### Connect with Polkadot-JS Apps Front-end
 
